@@ -46,4 +46,23 @@ public class DemoClass
             Console.WriteLine(ObjEnumerator.Current);
         }
     }
+
+    public void StackDemo()
+    {
+        Console.WriteLine("\n-----------Stack Demo----------");
+
+        Stack<string> objStack = new Stack<string>();
+        objStack.Push("a");
+        objStack.Push("b");
+        objStack.Push("c");
+        objStack.Push("d");
+        objStack.Push("e");
+
+        string objPop = objStack.Pop();
+        foreach (var element in objStack)
+        {
+            Console.WriteLine(element);
+        }
+        Console.WriteLine($"\nPoped element: {objPop}");
+    }
 }

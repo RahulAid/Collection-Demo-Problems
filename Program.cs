@@ -8,6 +8,7 @@
             DemoClass objDemo = new DemoClass();
             objDemo.DictionaryDemo();
             objDemo.QueueDemo();
+            objDemo.StackDemo();
         }
     }
 }
