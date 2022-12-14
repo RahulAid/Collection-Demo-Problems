@@ -10,6 +10,7 @@
             objDemo.QueueDemo();
             objDemo.StackDemo();
             objDemo.ListDemo();
+            objDemo.SetDemo();
         }
     }
 }

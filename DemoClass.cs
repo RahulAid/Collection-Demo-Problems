@@ -80,4 +80,21 @@ public class DemoClass
             Console.WriteLine(element);
         }
     }
+
+    public void SetDemo()
+    {
+        Console.WriteLine("\n----------Set Demo----------");
+
+        var objSet = new HashSet<string>();
+        objSet.Add("a");
+        objSet.Add("b");
+        objSet.Add("c");
+        objSet.Add("d");
+
+        HashSet<string>.Enumerator enumerator = objSet.GetEnumerator();
+        while (enumerator.MoveNext())
+        {
+            Console.WriteLine(enumerator.Current);
+        }
+    }
 }
